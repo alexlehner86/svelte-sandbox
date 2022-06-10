@@ -1,6 +1,6 @@
 # Svelte Sandbox
 
-A sandbox to try out the svelte framework. This project was created using the command `npm init svelte my-app`
+A sandbox to try out the svelte framework. This project was created using the command `npm init svelte my-app`.
 
 ## Developing
 

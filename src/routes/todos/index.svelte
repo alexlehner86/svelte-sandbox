@@ -2,14 +2,7 @@
 	import { enhance } from '$lib/form';
 	import { scale } from 'svelte/transition';
 	import { flip } from 'svelte/animate';
-
-	type Todo = {
-		uid: string;
-		created_at: Date;
-		text: string;
-		done: boolean;
-		pending_delete: boolean;
-	};
+	import type { Todo } from 'src/models/todo.model';
 
 	export let todos: Todo[];
 </script>
@@ -32,7 +25,7 @@
 			}
 		}}
 	>
-		<input name="text" aria-label="Add todo" placeholder="+ tap to add a todo" />
+		<input type="text" name="text" aria-label="Add todo" placeholder="+ tap to add a todo" />
 	</form>
 
 	{#each todos as todo (todo.uid)}
